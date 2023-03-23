@@ -11,7 +11,6 @@ from mouse import ArduinoMouse
 class Colorant:
     LOWER_COLOR = np.array([140, 110, 150])
     UPPER_COLOR = np.array([150, 195, 255])
-    THRESHOLD = 60
 
     def __init__(self, x, y, grabzone):
         self.arduinomouse = ArduinoMouse()
