@@ -1,7 +1,7 @@
 
 # Colorant
 
-Colorant is a highly efficient Color Aimbot designed to rapidly scan for purple color range on your screen and aim/shoot at it, without any interference with the game memory or files of Valorant.
+Colorant is a highly efficient Color Aimbot designed to rapidly scan for a range of purple color of enemy outlines on your screen and precisely aim/shoot at it, without any interference with the game memory or files of Valorant.
 
 Unlike conventional video game cheats that rely on the process memory to function, Color aimbots adopt a unique approach by avoiding any memory reading altogether. This innovative approach has the potential to remain undetectable by anti-cheat mechanisms that typically attempt to block memory reads. Additionally, sending input to the video game without triggering any flags can be a challenging aspect to consider.
 
