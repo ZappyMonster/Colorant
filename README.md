@@ -1,18 +1,6 @@
 <h1 align="center">Colorant 🍇</h1>
-  <p align="center">
-    Valorant color aimbot & triggerbot
-    <br />
-    <br />
-    <a href="https://github.com/hafyzwithawhy/Colorant/releases/latest">Download</a>
-    ·
-    <a href="https://github.com/hafyzwithawhy/Colorant/issues">Report a Bug</a>
-    ·
-    <a href="https://discord.com/invite/CvXy3uZCQ7">Discord</a>
-  </p>
-</div>
 
-
-## About The Project
+### About The Project
 
 Colorant is a highly efficient color aimbot designed to rapidly scan for a range of purple color of the valorant enemy player outlines on your screen and precisely aim/shoot at it, without any interference with the game memory or files of Valorant.
 
