@@ -7,6 +7,8 @@ Unlike conventional video game cheats that rely on the process memory to functio
 
 The primary objective of this project is to showcase a proof of concept, demonstrating the potential of Colorant's novel approach to aimbot technology.
 
+---
+
 ![image](https://user-images.githubusercontent.com/82477000/225608740-5f690006-9cc8-4d88-8a60-cda89d0f936f.png)
 
 [![Downloads][downloads-shield]][downloads-link]
