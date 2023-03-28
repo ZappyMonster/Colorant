@@ -1,7 +1,4 @@
-
-
-  <h3 align="center">Colorant 🍇</h3>
-
+<h1 align="center">Colorant 🍇</h1>
   <p align="center">
     Valorant color aimbot & triggerbot
     <br />
