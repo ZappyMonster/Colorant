@@ -45,7 +45,7 @@ If you require support or have any questions regarding Colorant, please feel fre
 
 ## Contributing
 
-contributions are welcome from the community, and if you have any suggestions or encounter any issues, please do not hesitate to open an [issue](https://github.com/hafyzwithawhy/Colorant/issues) in the repository and provide as much detail as possible. Additionally, if you find this project helpful or interesting, please consider giving it a STAR.
+contributions are welcome from the community, and if you have any suggestions or encounter any issues, please do not hesitate to open an [issue](https://github.com/hafyzwithawhy/Colorant/issues) in the repository and provide as much detail as possible. Additionally, if you find this project helpful or interesting, please give it a ⭐.
 
 ## Disclaimer
 
