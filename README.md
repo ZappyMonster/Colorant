@@ -49,11 +49,14 @@ contributions are welcome from the community, and if you have any suggestions or
 
 ## Disclaimer
 
+> **Note**
 It is important to note that this project is intended for EDUCATIONAL PURPOSES ONLY, and should be used at YOUR OWN RISK.
 
+> **Note**
 Although the project is undetectable, this does not mean that it is not bannable. I do not condone any form of hacking, as it can ruin the game experience for both yourself and other players. This project was created solely to demonstrate the possibility of using an Arduino and a simple Python script to "cheat" within a video game.
 
-There is a compatibility issue between Logitech mice and the current Arduino sketch, I'll get this fixed soon.
+> **Warning**
+It is important to note that while the current implementation may be undetectable, Riot Games could still take action against the current source code itself. To minimize the risk of detection, it is advisable to modify the existing code or create a unique implementation based on the same concept. However, I strongly encourage ethical gaming practices and discourage the use of such methods to gain an unfair advantage in any gaming environment.
 
 [discord-shield]: https://img.shields.io/discord/1074740638618243132?color=purple&label=Support&logo=discord&logoColor=white&style=for-the-badge
 [discord-link]: https://discord.com/invite/CvXy3uZCQ7
