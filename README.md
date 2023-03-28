@@ -45,6 +45,7 @@ By making these adjustments, you can fine-tune Colorant to suit your preferences
 ## Support
 
 If you require support or have any questions regarding Colorant, please feel free to join the community Discord:
+
 [![Discord Banner 2][discord-banner]][discord-link]
 
 ## Contributing
