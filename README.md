@@ -30,8 +30,8 @@ With the prerequisites and dependencies installed, you can now run the `main.py`
 
 By following these steps, you can enjoy using Colorant to quickly and accurately aim and shoot within your favorite valorant gamemode.
 
-## Info
-In order for Colorant to function correctly, there are a few important things that you need to consider:
+## Configuration
+You can customize Colorant to suit your preferences:
 
 - Enemy outlines should be set to PURPLE, as this is how the color aimbot operates.
 - The FOV size can be adjusted by editing the value located [Here](https://github.com/hafyzwithawhy/Colorant/blob/836189fb99fa8d6906569103d58a75b4ab98b760/main.py#L8), please note that the existing code is optimized for the use of a 50 FOV, so adjustments to the code may be required to ensure proper functionality for other fov sizes.
