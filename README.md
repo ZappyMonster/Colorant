@@ -35,7 +35,7 @@ You can customize Colorant to suit your preferences:
 
 - Enemy outlines should be set to PURPLE, as this is how the color aimbot operates.
 - The FOV size can be adjusted by editing the value located [Here](https://github.com/hafyzwithawhy/Colorant/blob/836189fb99fa8d6906569103d58a75b4ab98b760/main.py#L8), please note that the existing code is optimized for the use of a 50 FOV, so adjustments to the code may be required to ensure proper functionality for other fov sizes.
-- If you wish to modify the keybinds for the aimbot, Check [This](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) link and then change the virtual-key codes in [This](https://github.com/hafyzwithawhy/Colorant/blob/836189fb99fa8d6906569103d58a75b4ab98b760/colorant.py#L26) function.
+- Modify keybinds by changing the virtual-key codes in [This](https://github.com/hafyzwithawhy/Colorant/blob/836189fb99fa8d6906569103d58a75b4ab98b760/colorant.py#L26) function. Refer to [This](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) link for virtual-key codes.
 
 By making these adjustments, you can fine-tune Colorant to suit your preferences and optimize its performance within the game.
 ## Support
