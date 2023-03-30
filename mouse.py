@@ -3,6 +3,7 @@ import serial.tools.list_ports
 import random
 import time
 import sys
+
 from termcolor import colored
 
 class ArduinoMouse:
@@ -15,6 +16,7 @@ class ArduinoMouse:
             self.serial_port.open()
         except serial.SerialException:
             print(colored('[Error]', 'red'), colored('Colorant is already open or the serial port is being used by another app.', 'white'))
+            time.sleep(5)
             sys.exit()
 
     def find_serial_port(self):
@@ -22,7 +24,8 @@ class ArduinoMouse:
         if port is not None:
             return port.device
         else:
-            print(colored('[Error]', 'red'), colored('No serial port found. Check your Arduino and try again.', 'white'))
+            print(colored('[Error]', 'red'), colored('No serial port found, check your Arduino connection and try again.', 'white'))
+            time.sleep(5)
             sys.exit()
 
     def move(self, x, y):
@@ -30,9 +33,9 @@ class ArduinoMouse:
         y = y + 256 if y < 0 else y
         self.serial_port.write(b"M" + bytes([int(x), int(y)]))
         
-    def click(self):
+    def click(self, delay=0.01):
         self.serial_port.write(b"C")
-        time.sleep(0.01)
+        time.sleep(delay)
         self.serial_port.write(b"U")
 
     def close(self):
