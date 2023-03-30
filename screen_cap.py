@@ -21,7 +21,9 @@ class ScreenCapture:
     def update(self):
         while True:
             with mss() as sct, self.lock:
-                monitor = {"top": self.y, "left": self.x, "width": self.grabzone, "height": self.grabzone}
+                monitor = sct.monitors[0]
+                top, left = monitor["top"] + self.y, monitor["left"] + self.x
+                monitor = {"top": self.y, "left": self.x, "width": self.grabzone, "height": self.grabzone, "monitor": 0}
                 self.pillow = sct.grab(monitor)
                 self.screen = np.array(self.pillow)
                 self.frame_count += 1
