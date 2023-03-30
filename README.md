@@ -61,7 +61,7 @@ It is important to note that this project is intended for EDUCATIONAL PURPOSES O
 Although the project is undetectable, this does not mean that it is not bannable. I do not condone any form of hacking, as it can ruin the game experience for both yourself and other players. This project was created solely to demonstrate the possibility of using an Arduino and a simple Python script to "cheat" within a video game.
 
 > **Warning**
-It is important to note that while the current implementation may be undetectable, Riot Games could still take action against the current source code itself. To minimize the risk of detection, it is advisable to modify the existing code or create a unique implementation based on the same concept. However, I strongly encourage ethical gaming practices and discourage the use of such methods to gain an unfair advantage in any gaming environment.
+It is important to note that while the current implementation may be undetectable, Riot Games could still take action against the current source code itself. To minimize the risk of detection, it is advisable to modify the existing code or create a unique implementation based on the same concept. 
 
 [discord-shield]: https://img.shields.io/discord/1074740638618243132?color=purple&label=Support&logo=discord&logoColor=white&style=for-the-badge
 [discord-link]: https://discord.com/invite/CvXy3uZCQ7
