@@ -33,10 +33,9 @@ class ArduinoMouse:
         y = y + 256 if y < 0 else y
         self.serial_port.write(b"M" + bytes([int(x), int(y)]))
         
-    def click(self, delay=0.01):
+    def click(self):
         self.serial_port.write(b"C")
-        time.sleep(delay)
-        self.serial_port.write(b"U")
+        time.sleep(0.01)
 
     def close(self):
         self.serial_port.close()
