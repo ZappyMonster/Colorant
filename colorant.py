@@ -15,14 +15,14 @@ class Colorant:
     def __init__(self, x, y, grabzone):
         self.arduinomouse = ArduinoMouse()
         self.grabber = ScreenCapture(x, y, grabzone)
-        threading.Thread(target=self.run, daemon=True).start()
+        threading.Thread(target=self.listen, daemon=True).start()
         self.toggled = False
 
     def toggle(self):
         self.toggled = not self.toggled
         time.sleep(0.2)
 
-    def run(self):
+    def listen(self):
         while True:
             if win32api.GetAsyncKeyState(0x02) < 0 and self.toggled:
                 self.process("move")
