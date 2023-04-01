@@ -3,3 +3,5 @@ mss==7.0.1
 Pillow==9.4.0
 termcolor==2.2.0
 pyserial==3.5
+keyboard==0.13.5
+opencv-python==4.7.0.72
