@@ -24,7 +24,7 @@ class ArduinoMouse:
         if port is not None:
             return port.device
         else:
-            print(colored('[Error]', 'red'), colored('No serial port found, check your Arduino connection and try again.', 'white'))
+            print(colored('[Error]', 'red'), colored('Unable to find serial port or the Arduino device is with different name. Please check its connection and try again.', 'white'))
             time.sleep(5)
             sys.exit()
 
