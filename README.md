@@ -30,6 +30,8 @@ Next, you will need to download and install Python, with [Version 3.8](https://w
 
 To utilize the Arduino board as a computer mouse, you can choose from five different sketches that are located within the [ArduinoSketches](https://github.com/hafyzwithawhy/Colorant/tree/main/ArduinoSketches) folder. Connect the Arduino board to your computer and open the Arduino IDE software. Then, select the appropriate board and port, and upload the desired sketch. By following these steps, you can turn your Arduino board into a functional computer mouse, enabling you to control the cursor and perform clicking functions using the board's hardware. I suggest trying out each of the five sketches to determine which one works best for your mouse.
 
+Note that if you selected a sketch other than [1Arduino](https://github.com/hafyzwithawhy/Colorant/tree/main/ArduinoSketches/1Arduino), you may need to configure [move](https://github.com/hafyzwithawhy/Colorant/blob/674355e95507c455ec14c4a6f5c11271d889a71e/mouse.py#L31) and [click](https://github.com/hafyzwithawhy/Colorant/blob/674355e95507c455ec14c4a6f5c11271d889a71e/mouse.py#L36) functions to make it compatible with your Arduino sketch. The Colorant code is currently optimized for the [1Arduino](https://github.com/hafyzwithawhy/Colorant/tree/main/ArduinoSketches/1Arduino) sketch, so adjustments may be necessary for other sketches.
+
 With the prerequisites and dependencies installed, you can now run the `main.py` file, which is the main entry point of the program. You do not need to make any changes to the code, as it is ready to use.
 
 By following these steps, you can enjoy using Colorant to quickly and accurately aim and shoot within your favorite valorant gamemode.
