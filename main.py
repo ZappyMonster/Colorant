@@ -4,6 +4,9 @@ import keyboard
 from termcolor import colored
 from colorant import Colorant
 
+os.system('color')
+os.system('title Colorant')
+
 TOGGLE_KEY = 'F1'
 FOV = 50
 CENTER_X, CENTER_Y = 1920 // 2, 1080 // 2
@@ -14,7 +17,6 @@ class Main:
         self.status = 'Disabled'
 
     def print(self):
-        os.system('title Colorant')
         print(colored('''
                          ▄████▄   ▒█████   ██▓     ▒█████   ██▀███   ▄▄▄       ███▄    █ ▄▄▄█████▓
                         ▒██▀ ▀█  ▒██▒  ██▒▓██▒    ▒██▒  ██▒▓██ ▒ ██▒▒████▄     ██ ▀█   █ ▓  ██▒ ▓▒
