@@ -48,7 +48,7 @@ class Colorant:
             cY = y + 9
             x_diff = cX - self.grabber.grabzone // 2
             y_diff = cY - self.grabber.grabzone // 2
-            self.arduinomouse.move(x_diff * 0.2, y_diff * 0.2)
+            self.arduinomouse.move(x_diff * 0.4, y_diff * 0.4)
             
         elif action == "click" and abs(center[0] - self.grabber.grabzone // 2) <= 4 and abs(center[1] - self.grabber.grabzone // 2) <= 10:
             self.arduinomouse.click()
