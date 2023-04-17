@@ -5,39 +5,38 @@ from PIL import Image
 import time
 
 class ScreenCapture:
-    def __init__(self, x, y, grabzone):
-        self.x, self.y, self.grabzone = x, y, grabzone
-        self.screen = np.zeros((grabzone, grabzone, 3), np.uint8)
-        self.pillow = None
+    def __init__(self, x, y, xfov, yfov):
+        self.x, self.y, self.xfov, self.yfov = x, y, xfov, yfov
+        self.screen = np.zeros((yfov, xfov, 3), np.uint8)
+        self.pillow_image = None
         self.lock = threading.Lock()
         self.frame_count = 0
         self.start_time = time.time()
-        self.start()
+        self.capturethread()
 
-    def start(self):
-        thread = threading.Thread(target=self.update, daemon=True)
-        thread.start()
+    def capturethread(self):
+        capture_thread = threading.Thread(target=self.capture, daemon=True)
+        capture_thread.start()
 
-    def update(self):
+    def capture(self):
         while True:
             with mss() as sct, self.lock:
                 monitor = sct.monitors[0]
                 top, left = monitor["top"] + self.y, monitor["left"] + self.x
-                monitor = {"top": self.y, "left": self.x, "width": self.grabzone, "height": self.grabzone, "monitor": 0}
-                self.pillow = sct.grab(monitor)
-                self.screen = np.array(self.pillow)
-                self.frame_count += 1
-                elapsed_time = time.time() - self.start_time
-                if elapsed_time >= 1:
-                    fps = self.frame_count / elapsed_time
-                    print(f" FPS: {fps:.2f}", end="\r")
-                    self.frame_count = 0
-                    self.start_time = time.time()
+                monitor = {"top": self.y, "left": self.x, "width": self.xfov, "height": self.yfov, "monitor": 0}
+                self.pillow_image = sct.grab(monitor)
+                self.screen = np.array(self.pillow_image)
+                self.fps()
+
+    def fps(self):
+        self.frame_count += 1
+        elapsed_time = time.time() - self.start_time
+        if elapsed_time >= 1:
+            fps = self.frame_count / elapsed_time
+            print(f" FPS: {fps:.2f}", end="\r")
+            self.frame_count = 0
+            self.start_time = time.time()
 
     def get_screen(self):
         with self.lock:
             return self.screen
-
-    def get_pillow(self):
-        with self.lock:
-            return Image.frombytes("RGB", self.pillow.size, self.pillow.bgra, "raw", "BGRX")
