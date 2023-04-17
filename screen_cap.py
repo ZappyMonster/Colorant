@@ -33,7 +33,7 @@ class ScreenCapture:
         elapsed_time = time.time() - self.start_time
         if elapsed_time >= 1:
             fps = self.frame_count / elapsed_time
-            print(f" FPS: {fps:.2f}", end="\r")
+            print(f" FPS: {fps:.0f}", end="\r")
             self.frame_count = 0
             self.start_time = time.time()
 
