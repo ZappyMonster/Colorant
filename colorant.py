@@ -5,7 +5,7 @@ import time
 import win32api
 import pyautogui
 
-from screen_cap import ScreenCapture
+from capture import Capture
 from mouse import ArduinoMouse
 from fov_window import show_detection_window, toggle_window
 
@@ -15,7 +15,7 @@ class Colorant:
 
     def __init__(self, x, y, xfov, yfov, FLICKSPEED, MOVESPEED):
         self.arduinomouse = ArduinoMouse()
-        self.grabber = ScreenCapture(x, y, xfov, yfov)
+        self.grabber = Capture(x, y, xfov, yfov)
         self.flickspeed = FLICKSPEED
         self.movespeed = MOVESPEED
         threading.Thread(target=self.listen, daemon=True).start()
@@ -54,7 +54,7 @@ class Colorant:
         y_offset = int(h * 0.3)
 
         if action == "move":
-            cX = center[0] + 2
+            cX = center[0]
             cY = y + y_offset
             x_diff = cX - self.grabber.xfov // 2
             y_diff = cY - self.grabber.yfov // 2
