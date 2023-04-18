@@ -50,6 +50,8 @@ If you require support or have any questions regarding Colorant, please feel fre
 
 [![Discord Banner 2][discord-banner]][discord-link]
 
+I would like to express my sincere appreciation and give due credit to the program Firepro, which served as a significant inspiration for the development of my Project Colorant. Furthermore, I would like to clarify that the Arduino sketches incorporated within this project were not coded by me.
+
 ## Contributing
 
 Contributions are welcome from the community, and if you have any suggestions or encounter any issues, please do not hesitate to open an [issue](https://github.com/hafyzwithawhy/Colorant/issues) in the repository and provide as much detail as possible. Additionally, if you find this project helpful or interesting, please give it a ⭐.
