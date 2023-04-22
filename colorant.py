@@ -10,8 +10,8 @@ from mouse import ArduinoMouse
 from fov_window import show_detection_window, toggle_window
 
 class Colorant:
-    LOWER_COLOR = np.array([140, 110, 150])
-    UPPER_COLOR = np.array([150, 195, 255])
+    LOWER_COLOR = np.array([140, 120, 180])
+    UPPER_COLOR = np.array([160, 200, 255])
 
     def __init__(self, x, y, xfov, yfov, FLICKSPEED, MOVESPEED):
         self.arduinomouse = ArduinoMouse()
